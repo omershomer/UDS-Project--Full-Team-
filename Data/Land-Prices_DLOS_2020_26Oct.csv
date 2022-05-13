@@ -1,0 +1,54 @@
+,
+,"The Price of Residential Land for Counties, ZIP Codes, and Census Tracts in the United States"
+,FHFA Working Paper 19-01
+,http://www.fhfa.gov/papers/wp1901.aspx
+,"For more information, email William Larson at william.larson@fhfa.gov"
+,"Version 3.0 (October, 2020)"
+,
+,"This Excel file includes the aggregate measures produced in the working paper.  The version number and date of this file will be updated whenever this file is updated.  Our aggregate measures cover six different levels of geographic aggregation: Census tracts, ZIP codes, counties, CBSAs, states and the District of Columbia, and the nation as a whole.  For each geographic aggregation, we generate both a balanced annual panel (2012-2019) and pooled cross-sectional estimates (2012-2019, base year: 2015).  Accordingly, there are 12 geographic data tabs in this file. 
+"
+,
+,
+,
+,
+,
+,
+,
+,
+,"Each of these tabs provides data for ""all SF parcels.""  The paper spatially interpolates values from the working sample in the paper (single-family properties in the GSE appraisal database that have an effective age of 15 years or less and that satisfy a variety of other filters designed to remove outliers or potentially inaccurate data) to all single-family properties in the CoreLogic assessor file to create the “all SF parcels” dataset.  See the paper or online FAQs for further description.  "
+,
+,
+,
+,
+,
+,
+,
+,"The pooled cross-section data tabs include the following variables: “as-is” land value per acre, “standardized” land value for a quarter-acre lot, the land share of property value, lot size, interior square footage, “as-is” property value, and “standardized” property value.  The panel data tabs omit lot size and interior square footage because these variables are estimated primarily using data for 2019.  All variables except the land share represent the average value across the included properties in the geography; the land share is calculated as the aggregate “as-is” land value divided by the aggregate “as-is” property value for the geography.  The “as-is” measures are based on the actual characteristics of each property in the geography without any adjustment to a standard set of characteristics.  The “standardized” land value adjusts for differences in lot size, and the “standardized” property value adjusts for differences in lot size, interior square footage, and effective age.  See the paper or online FAQs for details. "
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,"The spatial interpolation mentioned above is done at the county level.  For ZIP codes that span multiple counties, we use a weighted average of the county-specific results for the ZIP code, where the weights are the share of the ZIP’s single-family housing units in each county."
+,
+,
+,
+,
+,"The results for CBSAs, states, and the nation as a whole are calculated as aggregations of the data for component counties.  All variables except the land share are calculated as the average across counties, weighted by the single-family housing stock in the 2013-2017 (5-year) ACS; land shares are calculated as the ratio of the aggregate land value to the aggregate property value across the included counties.  CBSAs are defined using the March 2020 boundaries.  The CBSA, state, and national aggregates necessarily omit single-family housing outside the counties included in the dataset.  "
+,
+,
+,
+,
+,
+,
+,
+,
+,"The final tab reports the estimates of the standardization parameters referred to in the paper.  These estimated parameters are from the regressions described in the paper to produce standardized land prices for a quarter-acre lot and standardized property values for a 2,000 square foot house that has an effective age of 15 years and is located on a quarter-acre lot.  Lot size typically adds to the value of the home and the lot at a decreasing rate (i.e. doubling the size increase the value but by less than double).  The same relationship is expected to hold for the effect of interior square footage on home value, while greater effective age is expected to reduce home value.  Some of the reported parameters depart from these expected ranges.  This can occur in areas where the ZIP code fixed effects included in the regressions do not account very well for omitted factors that affect land prices or home values.  This typically occurs only in sparsely populated areas. We intend to address this issue in future revisions."
